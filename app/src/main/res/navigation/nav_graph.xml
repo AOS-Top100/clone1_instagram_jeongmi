@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu_home">
+
+    <!-- 메인 홈 -->
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.clone.instagram_jm.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- 검색 -->
+    <fragment
+        android:id="@+id/menu_search"
+        android:name="com.clone.instagram_jm.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+
+    <!-- 글 추가 -->
+    <fragment
+        android:id="@+id/menu_add"
+        android:name="com.clone.instagram_jm.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+
+    <!-- 릴스 -->
+    <fragment
+        android:id="@+id/menu_relay_story"
+        android:name="com.clone.instagram_jm.relayStory.RelayStoryFragment"
+        android:label="fragment_relay_story"
+        tools:layout="@layout/fragment_relay_story" />
+
+    <!-- 마이페이지 -->
+    <fragment
+        android:id="@+id/menu_my_page"
+        android:name="com.clone.instagram_jm.myPage.MyPageFragment"
+        android:label="fragment_my_page"
+        tools:layout="@layout/fragment_my_page" />
+
+</navigation>
